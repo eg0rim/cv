@@ -114,6 +114,8 @@
 \let\ratingmarker\cvRatingMarker  % for backward compatibility
 \newcommand{\cvDateMarker}{\faCalendar[regular]}
 \newcommand{\cvLocationMarker}{\faMapMarker}
+\newcommand{\cvOrganizationMarker}{\faBuilding}
+\newcommand{\cvCertMarker}{\faCertificate}
 \newcommand{\locationname}{Location}
 \newcommand{\datename}{Date}
 
@@ -426,6 +428,23 @@
   \item[\small\normalfont\mailaddresssymbol] #3
   \end{description}
 %   \medskip
+}
+
+\newcommand{\cvcertificate}[4]{%
+{\color{emphasis}#1\par}
+\smallskip
+{\small\color{accent}#2\par}
+\smallskip
+\ifstrequal{#3}{}{}{%
+  {\small\makebox[0.5\linewidth][l]%
+    {\BeginAccSupp{method=pdfstringdef,ActualText={\datename:}}\cvDateMarker\EndAccSupp{}%
+    ~#3}%
+  }}%
+\ifstrequal{#4}{}{}{%
+  {\small\makebox[0.5\linewidth][l]%
+    {\cvCertMarker~#4}%
+  }}\par
+\smallskip\normalsize
 }
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
