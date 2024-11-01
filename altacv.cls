@@ -18,6 +18,11 @@
 % - https://github.com/logological Remove redundant hyperref and typos (Apr 2021)
 
 %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+% Minor modification a made by 
+% Egor Im (egor.im.97@gmail.com)
+% Used for making personal CV
+%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{altacv}[2024/10/31 AltaCV v1.7.3, yet another alternative class for a resume/curriculum vitae.]
 
