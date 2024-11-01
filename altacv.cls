@@ -104,6 +104,7 @@
 \colorlet{heading}{black}
 \colorlet{headingrule}{black}
 \colorlet{subheading}{emphasis}
+\colorlet{subsubheading}{black}
 \colorlet{body}{black!80!white}
 \colorlet{name}{heading}
 \colorlet{tagline}{accent}
@@ -287,6 +288,7 @@
 \newcommand{\personalinfofont}{\footnotesize\bfseries}
 \newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
+\newcommand{\cvsubsubsectionfont}{\bfseries}
 
 \newcommand{\makecvheader}{%
   \begingroup
@@ -314,7 +316,11 @@
 
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
-  {\color{subheading}\cvsubsectionfont{#1}\par}\medskip
+  {\color{subheading}\cvsubsectionfont{#1}\par}\smallskip
+}
+
+\newcommand{\cvsubsubsection}[1]{%
+  {\color{subsubheading}\cvsubsubsectionfont{#1}\par}\smallskip
 }
 
 % v1.1.4: fixes inconsistent font size
@@ -335,7 +341,7 @@
       {\BeginAccSupp{method=pdfstringdef,ActualText={\locationname:}}\cvLocationMarker\EndAccSupp{}%
         ~#4}%
     }}\par
-  \medskip\normalsize
+  \smallskip\normalsize
 }
 
 % v1.7: adds accsupp for the icon as well
@@ -421,11 +427,11 @@
 }
 
 \newcommand{\cvref}[3]{%
-  \smallskip
   \textcolor{emphasis}{\textbf{#1}}\par
-  \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-  \item[\small\normalfont\emailsymbol] #2
-  \item[\small\normalfont\mailaddresssymbol] #3
+  \smallskip
+  \begin{description}[style=multiline,leftmargin=1.35em,align=left]
+  \item[\small\normalfont\cvOrganizationMarker] #2
+  \item[\small\normalfont\emailsymbol] #3
   \end{description}
 %   \medskip
 }
@@ -433,7 +439,7 @@
 \newcommand{\cvcertificate}[4]{%
 {\color{emphasis}#1\par}
 \smallskip
-{\small\color{accent}#2\par}
+{\color{accent}\textbf{#2}\par}
 \smallskip
 \ifstrequal{#3}{}{}{%
   {\small\makebox[0.5\linewidth][l]%

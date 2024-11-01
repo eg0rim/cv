@@ -99,6 +99,7 @@
 \colorlet{accent}{ETHRed}
 \colorlet{emphasis}{ETHRed}
 \colorlet{body}{ETHGrey120}
+\colorlet{subsubheading}{ETHRed80}
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\bfseries}
@@ -192,42 +193,68 @@
 \cvsection{Experience}
 
 \cvevent{Scientific Assistant}{ETH Z\"urich}{Jun 2021 -- Ongoing}{Z\"urich, Switzerland}
-description
+Integral part of PhD program at the Institute for Theoretical Physics.
 \begin{itemize}
-  \item point
+  \item Conducting research in the field of mathematical physics.
+  \item Teaching assistant for a number of theoretical physics courses for both bachelor and master students.
+  \item Assisted with the supervision of a master thesis.
 \end{itemize}
 
 \cvsection{Projects}
 
-\cvevent{Algebraic structures of Ads cft integrability}{Funding agency/institution}{}{}
+\cvevent{Polylogarithm Functions on Higher-Genus Surfaces}{ETH Z\"urich}{}{}
+\vspace{-0.25em}
+Study of the polylogarithm functions on higher-genus Riemann surfaces and their 
+constructions using Schottky uniformization.
 \begin{itemize}
-\item Details
+  \item Developed a Python package and a C library to evaluate higher-genus polylogarithms (using openMP, soon to be published).
+  \item Worked in a successful collaboration of 5 researchers.
 \end{itemize}
 
-\divider
+\medskip
 
-\cvevent{Polylogarithms on rieman surfaces}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
-
-\divider
-
-\cvevent{Optical neural networks}{Funding agency/institution}{Project duration}{}
+\cvevent{Algebraic Structures in AdS/CFT Integrability}{ETH Z\"urich}{}{}
+\vspace{-0.25em}
+Study of Lie bialgebras and quantum algebras in the context of AdS\textsubscript{5}/CFT\textsubscript{4} integrability.
+\begin{itemize}
+\item Applied abstract algebraic structures to the physical problem.
+\item Developed a Mathematica package to work with Lie bialgebras.
+\item Conducted an independent research project under supervision of Prof. Niklas Beisert.
+\end{itemize}
 
 \cvsection{Education}
 
 \cvevent{PhD in Theoretical Physics}{ETH Z\"urich}{Jun 2021 -- Ongoing}{Z\"urich, Switzerland}
-Thesis title: Wonderful Research
+{\color{ETHBlue80}Tentative thesis title:} ``Hopf Algebras in QFT and String Theories''\\
+{\color{ETHBlue80}Supervisor:} Prof. Niklas Beisert
 
-\divider
+\medskip
 
-\cvevent{Master in Physics}{ETH Z\"urich}{Sep 2019 -- Apr 2021}{Z\"urich, Switzerland}
-Short description
+\cvevent{MSc in Physics}{ETH Z\"urich}{Sep 2019 -- Apr 2021}{Z\"urich, Switzerland}
+{\color{ETHBlue80} GPA:} \textbf{5.8/6.0 with distinction}\\
+{\color{ETHBlue80}Major fields of study:} \cvtag{theoretical physics} \cvtag{quantum field theory} \cvtag{string theory} \cvtag{integrability} \cvtag{Lie symmetries}
+ 
+\medskip
 
-\divider
+\cvevent{BSc in Applied Mathematics and Physics}{St Petersburg University}{Sep 2015 -- June 2019}{St Petersburg, Russia}
+{\color{ETHBlue80} GPA:} \textbf{5.0/5.0 with distinction}\\
+{\color{ETHBlue80}Major fields of study:} \cvtag{computational physics} \cvtag{numerical algorithms} \cvtag{programming}  \cvtag{high performance computations} \cvtag{networks}
+ 
+\newpage
 
-\cvevent{Bachelor in Applied Mathematics and Physics}{St Petersburg University}{Sep 2015 -- June 2019}{St Petersburg, Russia}
-Make focus on programming skills
+\cvsection{Conferences}
+\cvsubsection{\printinfo{\faMicrophone}{Talks}}
+\begin{itemize}
+  \item Workshop on Representation Theory and Mathematical Physics \href{https://smfi.unipr.it/en/node/100218}{\color{ETHBlue120}``New Perspectives on Yangians and Quantum Affine Algebras''}, Parma, Italy, 1-3 October 2024.
+  \item The XXVIII International Conference on Integrable Systems and Quantum Symmetries (\href{http://isqs.eu/}{\color{ETHBlue120}ISQS28}), Prague, Czech Republic, 1-5 July 2024.
+\end{itemize}
 
+% \cvsubsection{\printinfo{\faImage}{Posters}}
+% \begin{itemize}
+%   \item Integrability in Gauge and String Theories (\href{https://exact.ictp-saifr.org/igst-2024/}{\color{ETHBlue120}IGST 2024}), São Paulo, Brazil, 17-21 June 2024.
+%   \item Integrability, Dualities and Deformations (\href{https://indico.cern.ch/event/1370523/page/34966-titles-abstracts-and-short-timetable}{\color{ETHBlue120}IDD 2024}), Swansea, UK, 15-19 July 2024.
+%   \item Integrability in Gauge and String Theories (\href{https://indico.phys.ethz.ch/event/49/page/25-contributions}{\color{ETHBlue120}IGST 2024}), Zürich, Switzerland, 19-23 June 2023.
+% \end{itemize}
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
@@ -235,27 +262,26 @@ Make focus on programming skills
 
 \cvsection{Languages}
 
-\cvskill{English}{5}
-\divider
-
-\cvskill{Spanish}{4}
-\divider
-
-\cvskill{German}{3.5} %% Supports X.5 values.
+\cvskill{English (C1 level)}{5}
+\smallskip
+\cvskill{German (B1 level)}{2.5}
+\smallskip
+\cvskill{Russian (native)}{5} %% Supports X.5 values.
 
 \cvsection{Skills}
 
 % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
 
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
+\cvsubsection{Programming languages}
+\smallskip
+\cvtag{Python} \cvtag{Mathematica} \cvtag{C/C++} \cvtag{Java}\\
+\smallskip
+\cvsubsection{Tools}
+\smallskip
+\cvtag{NumPy} \cvtag{Matplotlib} \cvtag{PySide/PyQt} \cvtag{SciPy} \cvtag{MPI/MPI4Py} \cvtag{openMP}
+\cvtag{GSL} \cvtag{Git} 
+\cvtag{TensorFlow} \cvtag{Pandas}  \cvtag{IntelMKL}\\
+\cvtag{Bash} \cvtag{\LaTeX} \cvtag{Copilot} 
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
@@ -264,11 +290,26 @@ Make focus on programming skills
 
 \cvsection{Certificates}
 
-\cvcertificate{DeepLearning.AI TensorFlow Developer}{Coursera}{Oct 2024}{\href{https://coursera.org/verify/professional-cert/86WCGZW0PODB}{86WCGZW0PODB}}
-description
+\cvcertificate{DeepLearning.AI TensorFlow Developer}{Coursera}{Oct 2024}{\href{https://coursera.org/verify/professional-cert/86WCGZW0PODB}{\color{ETHBlue120}86WCGZW0PODB}}
+{\color{ETHBlue80}Acquired skills:} \cvtag{deep learning} \cvtag{TensorFlow} \cvtag{computer vision} \cvtag{NLP} \cvtag{time series}
 
+\cvsection{Other Activities}
+\cvevent{Organization of IGST 2023}{ETH Z\"urich}{Jun 2023}{Z\"urich, Switzerland}
+Participated in organization of the conference ``Integrability in Gauge and String Theories 2023''.
+Developed a set of Bash scripts to automate the \href{https://indico.phys.ethz.ch/event/49/page/26-hybrid-setup}{\color{ETHBlue120}hybrid setup} of the conference.
 
-\cvsection{Personal Projects}
+\medskip
+
+\cvevent{Night of Physics 2022}{ETH Z\"urich}{Jun 2022}{Z\"urich, Switzerland}
+Participated in the public scientific fair with a stand on the topic of curved spaces. Developed the simulator to travel through curved 3D spaces \href{https://hypray2.phys.ethz.ch/}{\color{ETHBlue120}hypray2} (using C++ and openMP).
+
+\medskip
+
+\cvevent{Article Management Tool}{GitHub: \href{https://github.com/eg0rim/amt}{\color{ETHBlue120}eg0rim/amt}}{}{}
+\vspace{-0.25em}
+Developer of a tool to manage articles and references for scientific writing. Supports API requests to arxiv.org to fetch metadata and PDFs.
+
+\newpage
 
 \cvsection{Referees}
 
@@ -277,12 +318,10 @@ description
 
 \divider
 
-\cvref{Prof.\ Johannes Br\"odel}{ETH Z\"urich}{jbroedel@ethz.ch}
+\cvref{Dr.\ Johannes Br\"odel}{ETH Z\"urich}{jbroedel@ethz.ch}
 
 
 \end{paracol}
-
-\newpage
 
 \cvsection{Publications}
 
@@ -304,9 +343,6 @@ description
 
 % \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
-\cvsection{Conferences}
-\cvsubsection{\printinfo{\faMicrophone}{Talks}}
 
-\cvsubsection{\printinfo{\faImage}{Posters}}
 
 \end{document}
