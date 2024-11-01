@@ -365,13 +365,13 @@
 % v1.6: Use accsupp so that the actual numeric value is copied/pasted
 %       and also support 0.5, 1.5, 2.5, 3.5, 4.5
 \newcommand{\cvskill}[2]{%
-  \textcolor{emphasis}{\textbf{#1}}\hfill
+  \textcolor{body}{\textbf{#1}}\hfill
   \BeginAccSupp{method=plain,ActualText={#2}}
   \foreach \x in {1,...,5}{%
     \ifdimequal{\x pt - #2 pt}{0.5pt}%
-    {\clipbox*{0pt -0.25ex {.5\width} {\totalheight}}{\color{accent}\cvRatingMarker}%
+    {\clipbox*{0pt -0.25ex {.5\width} {\totalheight}}{\color{subheading}\cvRatingMarker}%
      \clipbox*{{.5\width} -0.25ex {\width} {\totalheight}}{\color{body!30}\cvRatingMarker}}
-    {\ifdimgreater{\x bp}{#2 bp}{\color{body!30}}{\color{accent}}\cvRatingMarker}%
+    {\ifdimgreater{\x bp}{#2 bp}{\color{body!30}}{\color{subheading}}\cvRatingMarker}%
   }\EndAccSupp{}\par%
 }
 

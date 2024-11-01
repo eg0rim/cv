@@ -18,4 +18,4 @@ This CV uses the template AltaCV with minor tweaks. Special thanks to the author
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at (egor.im.97@gmail.com)[mailto:egor.im.97@gmail.com].
+For any questions or suggestions, feel free to contact me at [egor.im.97@gmail.com](mailto:egor.im.97@gmail.com).
