@@ -116,6 +116,8 @@
 % \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
 % \renewcommand{\cvLocationMarker}{\faMapMarker*}
 
+% highlight command
+\newcommand{\highlight}[1]{{\color{ETHBlue120}\textbf{#1}}}
 
 % If your CV/résumé is in a language other than English,
 % then you probably want to change these so that when you
@@ -207,8 +209,8 @@ Integral part of PhD program at the Institute for Theoretical Physics.
 Study of the polylogarithm functions on higher-genus Riemann surfaces and their 
 constructions using Schottky uniformization.
 \begin{itemize}
-  \item Developed a Python package and a C library to evaluate higher-genus polylogarithms (using openMP, soon to be published).
-  \item Worked in a successful collaboration of 5 researchers.
+  \item Developed a \highlight{Python package} and a \highlight{C library} to evaluate higher-genus polylogarithms (using openMP, soon to be published).
+  \item Worked in a \highlight{successful collaboration} of 5 researchers.
 \end{itemize}
 
 \medskip
@@ -218,8 +220,8 @@ constructions using Schottky uniformization.
 Study of Lie bialgebras and quantum algebras in the context of AdS\textsubscript{5}/CFT\textsubscript{4} integrability.
 \begin{itemize}
 \item Applied abstract algebraic structures to the physical problem.
-\item Developed a Mathematica package to work with Lie bialgebras.
-\item Conducted an independent research project under supervision of Prof. Niklas Beisert.
+\item Developed a \highlight{Mathematica package} to work with Lie bialgebras.
+\item Conducted an \highlight{independent research} project under supervision of Prof. Niklas Beisert.
 \end{itemize}
 
 \cvsection{Education}
@@ -281,7 +283,7 @@ Study of Lie bialgebras and quantum algebras in the context of AdS\textsubscript
 \cvtag{NumPy} \cvtag{Matplotlib} \cvtag{PySide/PyQt} \cvtag{SciPy} \cvtag{MPI/MPI4Py} \cvtag{openMP}
 \cvtag{GSL} \cvtag{Git} 
 \cvtag{TensorFlow} \cvtag{Pandas}  \cvtag{IntelMKL}\\
-\cvtag{Bash} \cvtag{\LaTeX} \cvtag{Copilot} 
+\cvtag{Bash} \cvtag{\LaTeX} \cvtag{Copilot} \cvtag{SQLite}
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
@@ -296,18 +298,19 @@ Study of Lie bialgebras and quantum algebras in the context of AdS\textsubscript
 \cvsection{Other Activities}
 \cvevent{Organization of IGST 2023}{ETH Z\"urich}{Jun 2023}{Z\"urich, Switzerland}
 Participated in organization of the conference ``Integrability in Gauge and String Theories 2023''.
-Developed a set of Bash scripts to automate the \href{https://indico.phys.ethz.ch/event/49/page/26-hybrid-setup}{\color{ETHBlue120}hybrid setup} of the conference.
+Developed a set of \highlight{Bash scripts} to automate the \href{https://indico.phys.ethz.ch/event/49/page/26-hybrid-setup}{\color{ETHBlue120}hybrid setup} of the conference.
 
 \medskip
 
 \cvevent{Night of Physics 2022}{ETH Z\"urich}{Jun 2022}{Z\"urich, Switzerland}
-Participated in the public scientific fair with a stand on the topic of curved spaces. Developed the simulator to travel through curved 3D spaces \href{https://hypray2.phys.ethz.ch/}{\color{ETHBlue120}hypray2} (using C++ and openMP).
+Participated in the public scientific fair with a stand on the topic of curved spaces. Developed the simulator (\highlight{using C++ and openMP}) to travel through curved 3D spaces \href{https://hypray2.phys.ethz.ch/}{\color{ETHBlue120}hypray2}.
 
 \medskip
 
-\cvevent{Article Management Tool}{GitHub: \href{https://github.com/eg0rim/amt}{\color{ETHBlue120}eg0rim/amt}}{}{}
+\cvevent{Article Management Tool}{}{}{}
 \vspace{-0.25em}
-Developer of a tool to manage articles and references for scientific writing. Supports API requests to arxiv.org to fetch metadata and PDFs.
+{\color{ETHRed}\textbf{GitHub:}} \href{https://github.com/eg0rim/amt}{\color{ETHBlue120}eg0rim/amt}\\
+Developer of a tool to manage articles and references for scientific writing. Supports API requests to arxiv.org to fetch metadata and PDFs. Uses \highlight{Python}, \highlight{PySide}, \highlight{SQLite}.
 
 \newpage
 
