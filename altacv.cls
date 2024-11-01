@@ -523,3 +523,12 @@
     \raggedright%
   }
 }
+
+% add on top of the page last update date
+\newcommand{\lastupdated}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east,inner sep=10pt] at (current page.north east) {%
+      \textcolor{gray!40}{Last updated on \today}
+    };
+  \end{tikzpicture}
+}
